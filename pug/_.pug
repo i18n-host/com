@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(content="width=device-width,initial-scale=1" name="viewport")
+    link(href="//cdn.jsdelivr.net/npm/fc3@0.1.14/_.css" rel="stylesheet")
+    link(href="//127.0.0.1:7771/_.css" rel="stylesheet")
+
+    script(type="importmap").
+      {
+        "imports": {
+          "-/": "//127.0.0.1:7772/"
+        }
+      }
+    script(type="module").
+      (await import("-/srv.js")).default("#{__SRV__}");
+    block head
+  body
+    block body

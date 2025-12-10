@@ -1,0 +1,39 @@
+
+dialog.Box
+  border 0.5em solid #f2f2f2
+  cursor auto
+  max-width 500px
+  min-width 310px
+  outline none
+  overflow visible
+  padding 0
+  position relative
+  top 16px
+
+  & a, & button
+    cursor pointer
+
+  &::backdrop
+    background rgba(0, 0, 0, 0.6)
+
+  & > div
+    box-sizing border-box
+    overflow auto
+
+    & > h1
+      text-align center
+
+  &::before
+    border 1px solid #ccc
+    box-shadow 0 0 0.25em #eee
+    content ''
+    height 100%
+    left 0
+    pointer-events none
+    position absolute
+    top 0
+    width 100%
+    z-index 1
+
+  & > b.w
+    margin 96px auto

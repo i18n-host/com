@@ -1,0 +1,6 @@
+services:
+  openresty:
+    container_name: openresty
+    extends:
+      file: openresty.yml
+      service: openresty

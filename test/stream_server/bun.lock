@@ -1,0 +1,13 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "dependencies": {
+        "@3-/u8": "^0.1.2",
+      },
+    },
+  },
+  "packages": {
+    "@3-/u8": ["@3-/u8@0.1.2", "", {}, "sha512-FBto/4tgnBnfSf/oesX5fq4mC6IXnzCzdb1w/CQpJEHBl2jLckloVrxvPAOfFTFXxPsd3U56swE7kvNQHI8pAA=="],
+  }
+}

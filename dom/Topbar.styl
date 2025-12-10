@@ -1,0 +1,38 @@
+i-topbar
+  align-items center
+  animation-duration 0.3s
+  animation-fill-mode both
+  background linear-gradient(0, #fcfcfc, #fff 50%, #fcfcfc)
+  border-bottom 1px solid #eee
+  display flex
+  flex-shrink 0
+  font-family h
+  font-variation-settings 'wght' 400, 'BEVL' 1
+  height 64px
+  justify-content space-between
+  left 0
+  padding 0 24px
+  position fixed
+  right 0
+  top 0
+  user-select none
+  z-index 1000
+
+  &.D
+    animation-name inD
+
+  &.N
+    display none
+    transform translate3d(0, -100%, 0)
+
+  &.H
+    animation-name oUp
+
+  & + b
+    inset 65px 0 0
+    position absolute
+    transition all 0.3s
+
+  &.H, &.N
+    & + b
+      top 0

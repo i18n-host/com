@@ -1,0 +1,29 @@
+endOfLine: lf
+pugAttributeSeparator: none
+pugEmptyAttributes: none
+pugSortAttributes: asc
+svelteAllowShorthand: true
+svelteIndentScriptAndStyle: false
+
+svelteSortOrder: options-markup-styles-scripts
+stylusSupremacy.insertBraces: false
+stylusSupremacy.insertSemicolons: false
+stylusSupremacy.insertColons: false
+stylusSupremacy.reduceMarginAndPaddingValues: true
+stylusSupremacy.alwaysUseImport: true
+stylusSupremacy.alwaysUseZeroWithoutUnit: true
+stylusSupremacy.insertNewLineAroundBlocks: true
+stylusSupremacy.insertNewLineAroundImports: true
+stylusSupremacy.insertNewLineAroundOthers: true
+stylusSupremacy.insertNewLineAroundProperties: true
+stylusSupremacy.preserveNewLinesBetweenPropertyValues: true
+
+plugins:
+  # wait for merge https://github.com/sveltejs/prettier-plugin-svelte/pull/483
+  - prettier-plugin-stylus-supremacy
+  - "@prettier/plugin-pug"
+  - "@3-/prettier-plugin-svelte"
+overrides:
+  - files: "*.svelte"
+    options:
+      parser: svelte

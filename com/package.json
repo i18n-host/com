@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@3-/webc": "file:../../hpc/coffee/webc",
+    "vite": "^7.0.6"
+  }
+}
